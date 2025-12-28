@@ -1,17 +1,27 @@
-// Основной JavaScript файл
-console.log('Groomz MVP инициализирован');
+// Groomz MVP - Main JavaScript
 
-// Пример: поиск при нажатии Enter
 document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.querySelector('input[placeholder*="Поиск"]');
-    const searchButton = document.querySelector('.btn-danger');
+    // Поиск при нажатии кнопки
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.getElementById('searchInput');
     
-    if (searchButton) {
-        searchButton.addEventListener('click', function() {
-            const query = searchInput.value;
+    if (searchBtn) {
+        searchBtn.addEventListener('click', function() {
+            const query = searchInput.value.trim();
             if (query) {
-                window.location.href = `salons.html?search=${query}`;
+                window.location.href = `salons.html?search=${encodeURIComponent(query)}`;
             }
         });
     }
+    
+    // Поиск при Enter
+    if (searchInput) {
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchBtn.click();
+            }
+        });
+    }
+    
+    console.log('Groomz MVP инициализирован');
 });
