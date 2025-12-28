@@ -24,6 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .hero h1 {
@@ -42,9 +43,19 @@ body {
     border: none;
 }
 
-.card:hover {
+.salon-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* SERVICE BLOCKS */
+.service-block {
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-block:hover {
+    transform: translateY(-5px);
 }
 
 /* NAVBAR */
