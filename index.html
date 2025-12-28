@@ -12,9 +12,9 @@
 <body>
     <!-- HEADER -->
     <header class="bg-white border-bottom sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light container-fluid px-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">
+                <a class="navbar-brand fw-bold fs-4" href="index.html">
                     <span class="text-danger">Groomz</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -46,13 +46,13 @@
     <!-- MAIN CONTENT -->
     <main>
         <!-- HERO SECTION -->
-        <section class="hero py-5 text-center text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <section class="hero py-5 text-center text-white">
             <div class="container">
                 <h1 class="display-4 fw-bold mb-4">Найди идеальный груминг-салон</h1>
                 <p class="lead mb-4">Поиск и сравнение лучших салонов груминга в твоём городе</p>
                 <div class="input-group input-group-lg mb-3" style="max-width: 600px; margin: 0 auto;">
-                    <input type="text" class="form-control" placeholder="Поиск по названию или городу...">
-                    <button class="btn btn-danger" type="button">Поиск</button>
+                    <input type="text" class="form-control" placeholder="Поиск по названию или городу..." id="searchInput">
+                    <button class="btn btn-danger" type="button" id="searchBtn">Поиск</button>
                 </div>
             </div>
         </section>
@@ -64,16 +64,15 @@
                 <div class="row g-4">
                     <!-- Салон 1 -->
                     <div class="col-md-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="ratio ratio-16x9">
-                                <img src="https://via.placeholder.com/400x300?text=Salon+1" class="card-img-top object-fit-cover" alt="Салон">
-                            </div>
+                        <div class="card h-100 shadow-sm salon-card">
+                            <img src="https://images.unsplash.com/photo-1576091160399-1112991bae58?w=400&h=300&fit=crop" class="card-img-top" alt="Салон 1" style="height: 250px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Грумминг-центр "Пушистик"</h5>
-                                <p class="card-text text-muted">Профессиональный груминг для всех пород</p>
+                                <p class="card-text text-muted small">Профессиональный груминг для всех пород</p>
+                                <p class="text-muted small"><strong>📍 Самара</strong></p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="badge bg-warning">⭐ 4.8</span>
-                                    <a href="salon-detail.html" class="btn btn-sm btn-primary">Подробнее</a>
+                                    <span class="badge bg-warning text-dark">⭐ 4.8</span>
+                                    <a href="salon-detail.html?id=1" class="btn btn-sm btn-primary">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -81,16 +80,15 @@
 
                     <!-- Салон 2 -->
                     <div class="col-md-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="ratio ratio-16x9">
-                                <img src="https://via.placeholder.com/400x300?text=Salon+2" class="card-img-top object-fit-cover" alt="Салон">
-                            </div>
+                        <div class="card h-100 shadow-sm salon-card">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" class="card-img-top" alt="Салон 2" style="height: 250px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Груминг-студия "Лапочка"</h5>
-                                <p class="card-text text-muted">Индивидуальный подход к каждому питомцу</p>
+                                <p class="card-text text-muted small">Индивидуальный подход к каждому питомцу</p>
+                                <p class="text-muted small"><strong>📍 Самара</strong></p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="badge bg-warning">⭐ 4.9</span>
-                                    <a href="salon-detail.html" class="btn btn-sm btn-primary">Подробнее</a>
+                                    <span class="badge bg-warning text-dark">⭐ 4.9</span>
+                                    <a href="salon-detail.html?id=2" class="btn btn-sm btn-primary">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -98,16 +96,15 @@
 
                     <!-- Салон 3 -->
                     <div class="col-md-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="ratio ratio-16x9">
-                                <img src="https://via.placeholder.com/400x300?text=Salon+3" class="card-img-top object-fit-cover" alt="Салон">
-                            </div>
+                        <div class="card h-100 shadow-sm salon-card">
+                            <img src="https://images.unsplash.com/photo-1587300411515-fbeef40ba6d2?w=400&h=300&fit=crop" class="card-img-top" alt="Салон 3" style="height: 250px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Премиум груминг "Royal Pets"</h5>
-                                <p class="card-text text-muted">Люкс-услуги для твоих питомцев</p>
+                                <p class="card-text text-muted small">Люкс-услуги для твоих питомцев</p>
+                                <p class="text-muted small"><strong>📍 Самара</strong></p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="badge bg-warning">⭐ 5.0</span>
-                                    <a href="salon-detail.html" class="btn btn-sm btn-primary">Подробнее</a>
+                                    <span class="badge bg-warning text-dark">⭐ 5.0</span>
+                                    <a href="salon-detail.html?id=3" class="btn btn-sm btn-primary">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -125,31 +122,67 @@
                 <h2 class="mb-5 text-center">Основные услуги</h2>
                 <div class="row g-4">
                     <div class="col-md-3">
-                        <div class="text-center">
+                        <div class="text-center service-block">
                             <div class="display-4 mb-3">✂️</div>
                             <h5>Стрижка</h5>
-                            <p class="text-muted">Профессиональная стрижка всех пород</p>
+                            <p class="text-muted small">Профессиональная стрижка всех пород</p>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="text-center">
+                        <div class="text-center service-block">
                             <div class="display-4 mb-3">🛁</div>
                             <h5>Купание</h5>
-                            <p class="text-muted">Питательные ванны и спецобработки</p>
+                            <p class="text-muted small">Питательные ванны и спецобработки</p>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="text-center">
+                        <div class="text-center service-block">
                             <div class="display-4 mb-3">💅</div>
                             <h5>Уход за шерстью</h5>
-                            <p class="text-muted">Премиум-уход и восстановление</p>
+                            <p class="text-muted small">Премиум-уход и восстановление</p>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="text-center">
+                        <div class="text-center service-block">
                             <div class="display-4 mb-3">👁️</div>
                             <h5>Гигиена</h5>
-                            <p class="text-muted">Чистка ушей, когтей, зубов</p>
+                            <p class="text-muted small">Чистка ушей, когтей, зубов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="mb-5 text-center">Почему выбирают Groomz</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <span style="font-size: 3rem;">🏆</span>
+                            </div>
+                            <h5>Проверенные салоны</h5>
+                            <p class="text-muted">Только лучшие салоны с проверенной репутацией</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <span style="font-size: 3rem;">💰</span>
+                            </div>
+                            <h5>Лучшие цены</h5>
+                            <p class="text-muted">Сравни цены и найди самое выгодное предложение</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <span style="font-size: 3rem;">⭐</span>
+                            </div>
+                            <h5>Честные отзывы</h5>
+                            <p class="text-muted">Читай реальные отзывы от клиентов</p>
                         </div>
                     </div>
                 </div>
@@ -157,8 +190,8 @@
         </section>
 
         <!-- CTA SECTION -->
-        <section class="py-5 bg-primary text-white text-center">
-            <div class="container">
+        <section class="py-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="container text-center">
                 <h2 class="mb-4">Готов запустить свой салон?</h2>
                 <p class="lead mb-4">Присоединись к платформе и начни привлекать новых клиентов</p>
                 <a href="#" class="btn btn-light btn-lg">Зарегистрировать салон</a>
@@ -169,7 +202,7 @@
     <!-- FOOTER -->
     <footer class="bg-dark text-white py-5">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-4 mb-4">
                     <h5>Groomz</h5>
                     <p class="text-muted">Агрегатор груминг-салонов России</p>
@@ -177,15 +210,15 @@
                 <div class="col-md-4 mb-4">
                     <h6>Навигация</h6>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-muted text-decoration-none">Главная</a></li>
-                        <li><a href="salons.html" class="text-muted text-decoration-none">Салоны</a></li>
-                        <li><a href="services.html" class="text-muted text-decoration-none">Услуги</a></li>
-                        <li><a href="articles.html" class="text-muted text-decoration-none">Статьи</a></li>
+                        <li><a href="index.html" class="text-muted text-decoration-none small">Главная</a></li>
+                        <li><a href="salons.html" class="text-muted text-decoration-none small">Салоны</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none small">Услуги</a></li>
+                        <li><a href="articles.html" class="text-muted text-decoration-none small">Статьи</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h6>Контакты</h6>
-                    <p class="text-muted">
+                    <p class="text-muted small">
                         <strong>Email:</strong> info@groomz.ru<br>
                         <strong>Телефон:</strong> +7 (846) 225-36-69<br>
                         <strong>Адрес:</strong> Самара, ул. Партизанская, 19
@@ -193,7 +226,7 @@
                 </div>
             </div>
             <hr class="bg-secondary">
-            <div class="text-center text-muted">
+            <div class="text-center text-muted small">
                 <p>&copy; 2026 Groomz. Все права защищены.</p>
             </div>
         </div>
